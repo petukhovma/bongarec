@@ -1,0 +1,776 @@
+/* Подключение шрифта Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Скрываем SEO текст на экране, но показываем для поисковых систем */
+.seo-text {
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+
+
+.video-card .video-thumbnail .eas6a97888e20 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.video-card .video-thumbnail .eas6a97888e20 img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.video-card .video-info .video-title {
+    color: #ff3d00;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.video-card .video-info .video-date {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+/* Стили для элементов внутри рекламного баннера, если необходимо */
+.exo-native-widget-outer-container {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.exo-native-widget-item {
+    background-color: transparent;
+}
+
+.exo-native-widget-item-image {
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.exo-native-widget-item-title {
+    text-shadow: none;
+    color: #ff3d00;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.exo-native-widget-item-text {
+    border: none;
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+
+
+
+/* Общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+header {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-bottom: 3px solid #ff3d00;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+form#search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form#search-form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+form#search-form input[type="text"]:focus {
+    background-color: #4b4b4b;
+}
+
+form#search-form button {
+    padding: 10px 20px;
+    background-color: #ff3d00;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+form#search-form button:hover {
+    background-color: #ffffff;
+    color: #ff3d00;
+}
+
+/* Навигационное меню */
+nav {
+    margin-top: 10px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ff3d00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ff3d00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:visited,
+a:active {
+    color: #ff3d00;
+}
+
+/* Контейнер контента */
+.content-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ff3d00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff3d00;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #ff3d00;
+    font-size: 1.8em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Кнопки периода времени */
+.time-period-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.time-period-buttons .tag {
+    display: inline-block;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.time-period-buttons .tag.active,
+.time-period-buttons .tag:hover {
+    background-color: #ff3d00;
+    color: #ffffff;
+    border-color: #ff3d00;
+}
+
+.time-period-buttons .tag.active {
+    border-color: #ffffff;
+}
+
+.model-info-container {
+    display: flex !important;
+    align-items: center !important;
+    margin: 20px 0 !important;
+    background-color: #2b2b2b !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    justify-content: flex-start !important; /* Вместо space-between */
+
+}
+
+.model-avatar {
+    flex-shrink: 0 !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-right: 20px !important; /* Чтобы добавить небольшой отступ справа от аватарки */
+}
+
+
+
+.model-details {
+    flex-grow: 1;
+    color: #ffffff;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.model-details h2 {
+    color: #ff3d00;
+    margin: 0;
+}
+
+.model-details h2 a {
+    color: #ff3d00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.model-details h2 a:hover {
+    color: #ffffff;
+}
+
+.new-button {
+    display: inline-block;
+    background-color: #ff3d00;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.new-button:hover {
+    background-color: #ffffff;
+    color: #ff3d00 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Контейнер для фильтров */
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 30px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+/* Стили для кнопок фильтрации */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-group button {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+}
+
+.button-group button.selected,
+.button-group button:hover {
+    background-color: #ff3d00;
+    color: #ffffff;
+}
+
+.button-group button.selected {
+    font-weight: bold;
+}
+
+.button-group button:not(:last-child) {
+    margin-right: 0;
+}
+
+/* Стили для кнопки поиска */
+.filter-form .new-button {
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    align-self: center;
+}
+
+/* Сетка видео */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-card {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-title {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+    color: #ff3d00;
+}
+
+.video-date {
+    margin: 5px 0 0;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+/* Пагинация */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.pagination a.active,
+.pagination a:hover {
+    background-color: #ff3d00;
+    color: #ffffff;
+}
+
+.pagination .dots {
+    margin: 0 8px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    vertical-align: middle;
+    padding-top: 2px;
+}
+
+/* Видео плеер */
+.video-player-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.video-player {
+    width: 100%;
+    height: 60vh;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Карточка модели */
+.model-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.model-info h3 {
+    color: #ff3d00;
+    margin-bottom: 10px;
+}
+
+.model-info p {
+    margin: 5px 0;
+    color: #e0e0e0;
+}
+
+/* Контейнер информации о видео и модели */
+.video-info-model-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-info-block,
+.model-info-block {
+    flex: 1;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Теги */
+.tag {
+    display: inline-block;
+    background-color: #ff3d00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.tag:hover {
+    background-color: #ffffff;
+    color: #ff3d00;
+}
+
+/* Обеспечение того, что цвет текста на тегах не изменяется после клика */
+.tag:visited,
+.tag:active {
+    color: #fff;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag-container strong {
+    margin-right: 10px;
+}
+
+/* Миниатюры видео */
+.video-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-end;
+    width: 500px;
+}
+
+.thumbnail-card {
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: calc(50% - 10px);
+}
+
+.thumbnail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail-image {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.thumbnail-card .video-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.model-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.model-details {
+    flex-grow: 1;
+}
+
+.video-thumbnails {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/* Адаптивность для разных экранов */
+@media (max-width: 1024px) {
+    .model-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-thumbnails {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .thumbnail-card {
+        width: 140px;
+    }
+
+    .model-avatar {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail-card {
+        width: 120px;
+    }
+
+    .model-avatar {
+        width: 100px;
+        height: 100px;
+}
+
+.model-video-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.model-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.model-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ff3d00;
+}
+
+.model-details p {
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Разделитель между блоками */
+.divider {
+    margin: 40px 0;
+    border-top: 2px solid #ff3d00;
+    width: 100%;
+}
+
+.see-all-button-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.see-all-button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff3d00;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-all-button-container a:hover {
+    background-color: #ffffff;
+    color: #ff3d00;
+}
+
+/* Футер */
+footer {
+    background-color: #2b2b2b;
+    padding: 20px;
+    text-align: center;
+    color: #e0e0e0;
+    border-top: 3px solid #ff3d00;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Кнопки фильтрации */
+.filter-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+    background-color: #ff3d00;
+    color: #ffffff;
+}
+
+/* Контейнер сортировки */
+.sort-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.sort-container label {
+    margin-right: 10px;
+}
+
+#sort-select {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}

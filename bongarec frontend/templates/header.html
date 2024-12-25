@@ -1,0 +1,42 @@
+<head>
+    <!-- Добавляем favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();
+	   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+	   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+	   ym(98542856, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true
+	   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98542856" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+
+<header>
+    <div class="header-container">
+        <a href="/" class="logo-link">
+            <img src="/static/bongarec_logo.webp" alt="BongaRec" class="logo" width="150" height="150">
+        </a>
+        <form id="search-form" action="/search">
+            <input type="text" name="query" placeholder="Search by model name...">
+            <button type="submit">Search</button>
+        </form>
+        <!-- Навигация -->
+        <nav>
+            <ul>
+                <li><a href="/models">Models</a></li>
+                <li><a href="/all_videos">All Videos</a></li>
+                <li><a href="/categories">Categories</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
